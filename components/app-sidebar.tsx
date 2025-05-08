@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import {
-  // AudioWaveform,
+  AudioWaveform,
   BookOpen,
   Bot,
   // Command,
@@ -10,7 +10,7 @@ import {
   GalleryVerticalEnd,
   Map,
   // PieChart,
-  // Settings2,
+  Settings2,
   SquareTerminal,
 } from "lucide-react";
 
@@ -106,7 +106,7 @@ const data = {
     {
       name: "Personal Information",
       url: "/forms/category1/form1",
-      icon: Map,
+      icon: AudioWaveform,
     },
     {
       name: "Contact Information",
@@ -116,7 +116,7 @@ const data = {
     {
       name: "Preferences",
       url: "/forms/category3/form1",
-      icon: Map,
+      icon: Settings2,
     },
   ],
 };
@@ -138,7 +138,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* <NavUser user={data.user} /> */}
         <Button
           onClick={() => resetFormData()}
-          className="flex-1 bg-purple-400 hover:bg-purple-900"
+          className="flex-1 bg-purple-400 hover:bg-purple-900 cursor-pointer"
         >
           Reset All forms
         </Button>

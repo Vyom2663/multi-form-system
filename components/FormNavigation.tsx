@@ -23,7 +23,7 @@ export function FormNavigation({ isValid, isSubmitting }: FormNavigationProps) {
       <Button 
         type="submit" 
         disabled={!isValid || isSubmitting}
-        className="bg-purple-800 hover:bg-purple-800"
+        className="bg-purple-800 hover:bg-purple-800 cursor-pointer"
       >
         {isSubmitting ? 'Submitting...' : 'Next'}
       </Button>
